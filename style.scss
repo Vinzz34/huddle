@@ -14,7 +14,7 @@ body{
     background-color: var(--violet);
     background-image: url('images/bg-desktop.svg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .header{
@@ -111,6 +111,10 @@ body{
         --font-size-big: 3rem;
     } 
 
+    body{
+        background-size: cover;
+    }
+
     .main{
 
         &__illustration{
@@ -153,6 +157,7 @@ body{
 
     body{
         background-image: url('images/bg-mobile.svg');
+        background-size: contain;
     }
 
     .header{
@@ -177,8 +182,10 @@ body{
 
 @media (max-width:40rem){
     :root{
+        --pd-top: 1.6rem;
+        --pd-bottom: 1.6rem;
         --mn-big: 4rem;
-        --mn-small: 2.5rem;
+        --mn-small: 5rem;
         --gap-big: 3rem;
         --gap-small: 2.5rem;
     }
